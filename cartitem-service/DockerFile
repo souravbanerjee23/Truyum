@@ -1,0 +1,4 @@
+FROM openjdk:8
+VOLUME /tmp
+ADD target/cartitem-service*.jar cartitem-service.jar
+ENTRYPOINT ["java","-jar","cartitem-service.jar"]
